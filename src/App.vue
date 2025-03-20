@@ -9,20 +9,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <header class="bg-blue-600 text-white shadow-md">
     <div class="wrapper max-w-7xl mx-auto px-4 py-5">
       <nav class="flex justify-between items-center">
-        <div class="text-3xl font-bold">Book Land</div>
+        <div class="text-3xl font-bold">Vue.js Supabase Template</div>
         <div class="space-x-4 mr-4">
-          <RouterLink
-            to="/search/books"
-            class="text-lg hover:text-blue-200 transition-colors duration-200"
-          >
-            Search
-          </RouterLink>
-          <RouterLink
-            to="/ranking/user"
-            class="text-lg hover:text-blue-200 transition-colors duration-200"
-          >
-            Ranking
-          </RouterLink>
           <RouterLink
             to="/"
             class="text-lg hover:text-blue-200 transition-colors duration-200"
@@ -34,6 +22,12 @@ import { RouterLink, RouterView } from 'vue-router'
             class="text-lg hover:text-blue-200 transition-colors duration-200"
           >
             Login
+          </RouterLink>
+          <RouterLink
+            to="/account_register"
+            class="text-lg hover:text-blue-200 transition-colors duration-200"
+          >
+            Account Register
           </RouterLink>
         </div>
       </nav>

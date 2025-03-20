@@ -5,11 +5,11 @@
 WITH credentials(id, mail, pass) AS (
   -- 5人のユーザーのUUID、メールアドレス、パスワードをここに記載します。
   SELECT * FROM (VALUES 
-    ('123e4567-e89b-12d3-a456-426614174000', 'user1@example.com', 'password1'),
-    ('123e4567-e89b-12d3-a456-426614174001', 'user2@example.com', 'password2'),
-    ('123e4567-e89b-12d3-a456-426614174002', 'user3@example.com', 'password3'),
-    ('123e4567-e89b-12d3-a456-426614174003', 'user4@example.com', 'password4'),
-    ('123e4567-e89b-12d3-a456-426614174004', 'user5@example.com', 'password5')
+    ('123e4567-e89b-12d3-a456-426614174000', 'user1@example.com', 'password'),
+    ('123e4567-e89b-12d3-a456-426614174001', 'user2@example.com', 'password'),
+    ('123e4567-e89b-12d3-a456-426614174002', 'user3@example.com', 'password'),
+    ('123e4567-e89b-12d3-a456-426614174003', 'user4@example.com', 'password'),
+    ('123e4567-e89b-12d3-a456-426614174004', 'user5@example.com', 'password')
   ) AS users(id, mail, pass)
 ),
 create_user AS (

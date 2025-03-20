@@ -11,34 +11,14 @@ const router = createRouter({
       component: Home,
     },
     {
-      path: '/',
-      name: 'mypage',
-      component: () => import('../views/MyPage.vue'),
-    },
-    {
       path: '/login',
       name: 'login',
-      component: () => import('../views/Login.vue'),
+      component: () => import('../views/auth/Login.vue'),
     },
     {
-      path: '/ranking/user',
-      name: 'user_ranking',
-      component: () => import('../views/UserRanking.vue'),
-    },
-    {
-      path: '/ranking/book',
-      name: 'book_ranking',
-      component: () => import('../views/BookRanking.vue'),
-    },
-    {
-      path: '/search/books',
-      name: 'search_books',
-      component: () => import('../views/SearchBooks.vue'),
-    },
-    {
-      path: '/book/:id',
-      name: 'book',
-      component: () => import('../views/Book.vue'),
+      path: '/account_register',
+      name: 'accountRegister',
+      component: () => import('../views/auth/Register.vue'),
     },
   ],
 });
