@@ -29,6 +29,18 @@ import { RouterLink, RouterView } from 'vue-router'
           >
             Account Register
           </RouterLink>
+          <RouterLink
+            to="/forgot_password"
+            class="text-lg hover:text-blue-200 transition-colors duration-200"
+          >
+            Forgot Password
+          </RouterLink>
+          <RouterLink
+            to="/reset_password"
+            class="text-lg hover:text-blue-200 transition-colors duration-200"
+          >
+            Reset Password
+          </RouterLink>
         </div>
       </nav>
     </div>

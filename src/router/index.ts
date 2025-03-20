@@ -20,6 +20,16 @@ const router = createRouter({
       name: 'accountRegister',
       component: () => import('../views/auth/Register.vue'),
     },
+    {
+      path: '/forgot_password',
+      name: 'forgot_password',
+      component: () => import('../views/auth/ForgotPassword.vue'),
+    },
+    {
+      path: '/reset_password',
+      name: 'reset_password',
+      component: () => import('../views/auth/ResetPassword.vue'),
+    },
   ],
 });
 
