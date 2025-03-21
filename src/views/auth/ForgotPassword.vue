@@ -5,6 +5,7 @@ import { supabase } from '@/lib/supabaseClient';
 const email = ref('');
 const message = ref('');
 
+// MEMO: ローカル環境だとInbucketにメールが飛ぶ (URLはsupabase statusのコマンドで見れる)
 const sendPasswordResetEmail = async () => {
   message.value = '';
   try {
